@@ -1,0 +1,486 @@
+extends pug/base 
+
+append vars
+	- html.classList.push("page-index")
+	- meta.charset = "utf-8"
+	- meta.description = "Solar Digital"
+	- title = "Solar Digital" 
+	- meta.viewport = "width=device-width, initial-scale=1" 
+
+
+block content
+	article.header_bg
+		header.header.container.flex
+			section.header_top.flex
+				.header_mobile-menu
+					span.header_mobile-menu__line._1
+					span.header_mobile-menu__line._2
+					span.header_mobile-menu__line._3
+				.header_logo
+					a(href="#")
+						img(src="images/logo.png", alt="logo")
+				.header_menu.flex
+					nav
+						ul.header_menu-ul.flex
+							li.header_menu-li
+								a(href="#").header_menu-link trade
+							li.header_menu-li
+								a(href="#").header_menu-link learn
+							li.header_menu-li
+								a(href="#").header_menu-link platform
+							li.header_menu-li
+								a(href="#").header_menu-link partners
+							li.header_menu-li.header_menu-tradeLi
+								a(href="#").header_menu-tradeLink trade now
+								ul.trade_submenu
+									li.trade_submenu-li
+										a(href="#").trade_submenu-link TRADE RANGE  SPREADS
+									li.trade_submenu-li
+										a(href="#").trade_submenu-link GO TO WEBTRADER
+							li.header_user
+								a(href="#").header_user-greeting welcome, 
+									span.header_user-name peter karsten 
+								ul.header_user-menu
+									li.header_user-li
+										a(href="#").header_user-link settings
+									li.header_user-li
+										a(href="#").header_user-link billing
+									li.header_user-li
+										a(href="#").header_user-link sign out
+			section.greeting.flex
+				.greeting_pagin
+					span.greenting_pagin-item.pagin_active forex
+					span.greenting_pagin-item indices
+					span.greenting_pagin-item comodities
+				.greeting_slick.flex
+					.greeting_item
+						p.greeting_item-title INTEGRITY MATTERS
+						.greeting_item-text 
+							p We’re regulated by the UK’s Financial Conduct Authority. 
+							p All client deposits are held in Barclays Bank and are protected – up to 
+								span.orange_text £50,000
+								| – by the FSCS
+						a.greeting_btn(href="#") start trading now
+							span.greeting_btn-subtext *demo account included 
+					.greeting_item
+						p.greeting_item-title INTEGRITY MATTERS
+						.greeting_item-text 
+							p We’re regulated by the UK’s Financial Conduct Authority. 
+							p All client deposits are held in Barclays Bank and are protected – up to 
+								span.orange_text £50,000
+								| – by the FSCS
+						a.greeting_btn(href="#") start trading now
+							span.greeting_btn-subtext *demo account included 
+
+					.greeting_item
+						p.greeting_item-title INTEGRITY MATTERS
+						.greeting_item-text 
+							p We’re regulated by the UK’s Financial Conduct Authority. 
+							p All client deposits are held in Barclays Bank and are protected – up to 
+								span.orange_text £50,000
+								| – by the FSCS
+						a.greeting_btn(href="#") start trading now
+							span.greeting_btn-subtext *demo account included 
+	article.tech.flex.container 
+		section.tech_item
+			.tech_item-state.flex
+				img(src="images/info.jpg", alt="").tech_item-stateImg
+				.tech_item-content.flex
+					p.tech_item-title mt4 trading
+					p.tech_item-summary The trading platform. Download  and start trading now
+				.tech_item-btns.flex
+					a(href="#").custom_btn.custom_btn_emptyBg
+						span.custom_btn_text.custom_btn_dwnld donwload
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_login login
+			.tech_item-hover.flex
+				img(src="images/info_hover.jpg", alt="").tech_item-hoverImg
+				.tech_item-content.flex
+					p.tech_item-subtitle WHY USE INFIFOX MOBILE?
+					p.tech_item-summary The trading platform. Download  and start trading now
+					ul.tech_item-ul
+						li.tech_item-list Full MT4 trading
+						li.tech_item-list Blistering latensy and relyability
+						li.tech_item-list Market execution, no reqoutes and no rejection
+						li.tech_item-list One Click Trading, Hedging and Scalping
+						li.tech_item-list Unlimited Open position or Pending orders
+						li.tech_item-list Flexible leverage from 1:1 — to 300:1
+				.tech_item-btns.flex
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_ios app store
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_gplay google play
+
+
+		section.tech_item
+			.tech_item-state.flex
+				img(src="images/phone.jpg", alt="").tech_item-stateImg.tech_item-phoneImg
+				.tech_item-content.flex
+					p.tech_item-title mt4 trading
+					p.tech_item-summary Trage on the go. Don’t miss the market. Dont’t miss themarket
+				.tech_item-btns.flex
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_ios app store
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_gplay google play
+			.tech_item-hover.flex
+				img(src="images/phone_hover.jpg", alt="").tech_item-hoverImg
+				.tech_item-content.flex
+					p.tech_item-subtitle WHY USE INFIFOX MOBILE?
+					p.tech_item-summary The trading platform. Download  and start trading now
+					ul.tech_item-ul
+						li.tech_item-list Full MT4 trading
+						li.tech_item-list Blistering latensy and relyability
+						li.tech_item-list Market execution, no reqoutes and no rejection
+						li.tech_item-list One Click Trading, Hedging and Scalping
+						li.tech_item-list Unlimited Open position or Pending orders
+						li.tech_item-list Flexible leverage from 1:1 — to 300:1
+				.tech_item-btns.flex
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_ios app store
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_gplay google play
+
+
+		section.tech_item
+			.tech_item-state.flex
+				img(src="images/graph.jpg", alt="").tech_item-stateImg.tech_item-graphImg
+				.tech_item-content.flex
+					p.tech_item-title mt4 trading
+					p.tech_item-summary The Latest financial trading instrument. Range futures is a revolutointo the marker
+				.tech_item-btns.flex
+					a(href="#").custom_btn.custom_btn_emptyBg
+						span.custom_btn_text.custom_btn_dwnld donwload
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_login login
+			.tech_item-hover.flex
+				img(src="images/graph_hover.jpg", alt="").tech_item-hoverImg.tech_item-graphImg
+				.tech_item-content.flex
+					p.tech_item-subtitle WHY USE INFIFOX MOBILE?
+					p.tech_item-summary The trading platform. Download  and start trading now
+					ul.tech_item-ul
+						li.tech_item-list Full MT4 trading
+						li.tech_item-list Blistering latensy and relyability
+						li.tech_item-list Market execution, no reqoutes and no rejection
+						li.tech_item-list One Click Trading, Hedging and Scalping
+						li.tech_item-list Unlimited Open position or Pending orders
+						li.tech_item-list Flexible leverage from 1:1 — to 300:1
+				.tech_item-btns.flex
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_ios app store
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_gplay google play
+
+
+		section.tech_item
+			.tech_item-state.flex
+				img(src="images/info.jpg", alt="").tech_item-stateImg
+				.tech_item-content.flex
+					p.tech_item-title mt4 trading
+					p.tech_item-summary Trade Forex directly from your browser  Start trading in just a couple of clicks 
+				.tech_item-btns.flex
+					a(href="#").custom_btn.custom_btn_emptyBg
+						span.custom_btn_text.custom_btn_dwnld donwload
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_login login
+			.tech_item-hover.flex
+				img(src="images/info_hover.jpg", alt="").tech_item-hoverImg
+				.tech_item-content.flex
+					p.tech_item-subtitle WHY USE INFIFOX MOBILE?
+					p.tech_item-summary The trading platform. Download  and start trading now
+					ul.tech_item-ul
+						li.tech_item-list Full MT4 trading
+						li.tech_item-list Blistering latensy and relyability
+						li.tech_item-list Market execution, no reqoutes and no rejection
+						li.tech_item-list One Click Trading, Hedging and Scalping
+						li.tech_item-list Unlimited Open position or Pending orders
+						li.tech_item-list Flexible leverage from 1:1 — to 300:1
+				.tech_item-btns.flex
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_ios app store
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_gplay google play
+
+
+		section.tech_item
+			.tech_item-state.flex
+				img(src="images/stat.jpg", alt="").tech_item-stateImg
+				.tech_item-content.flex
+					p.tech_item-title mt4 trading
+					p.tech_item-summary The trading terminal that rivails most advanced , institutional platform
+				.tech_item-btns.flex
+					a(href="#").custom_btn.custom_btn_emptyBg
+						span.custom_btn_text.custom_btn_dwnld donwload
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_login login
+			.tech_item-hover.flex
+				img(src="images/stat_hover.jpg", alt="").tech_item-hoverImg
+				.tech_item-content.flex
+					p.tech_item-subtitle WHY USE INFIFOX MOBILE?
+					p.tech_item-summary The trading platform. Download  and start trading now
+					ul.tech_item-ul
+						li.tech_item-list Full MT4 trading
+						li.tech_item-list Blistering latensy and relyability
+						li.tech_item-list Market execution, no reqoutes and no rejection
+						li.tech_item-list One Click Trading, Hedging and Scalping
+						li.tech_item-list Unlimited Open position or Pending orders
+						li.tech_item-list Flexible leverage from 1:1 — to 300:1
+				.tech_item-btns.flex
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_ios app store
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_gplay google play
+
+
+		section.tech_item
+			.tech_item-state.flex
+				img(src="images/serve.jpg", alt="").tech_item-stateImg.tech_item-serveImg
+				.tech_item-content.flex
+					p.tech_item-title mt4 trading
+					p.tech_item-summary Experience the speed of VPS Trade throught your own server 
+				.tech_item-btns.flex
+					a(href="#").custom_btn.custom_btn_emptyBg
+						span.custom_btn_text.custom_btn_dwnld donwload
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_login login
+			.tech_item-hover.flex
+				img(src="images/serve_hover.jpg", alt="").tech_item-hoverImg.tech_item-serveImg
+				.tech_item-content.flex
+					p.tech_item-subtitle WHY USE INFIFOX MOBILE?
+					p.tech_item-summary The trading platform. Download  and start trading now
+					ul.tech_item-ul
+						li.tech_item-list Full MT4 trading
+						li.tech_item-list Blistering latensy and relyability
+						li.tech_item-list Market execution, no reqoutes and no rejection
+						li.tech_item-list One Click Trading, Hedging and Scalping
+						li.tech_item-list Unlimited Open position or Pending orders
+						li.tech_item-list Flexible leverage from 1:1 — to 300:1
+				.tech_item-btns.flex
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_ios app store
+					a(href="#").custom_btn
+						span.custom_btn_text.custom_btn_gplay google play
+	article.trading_bg
+		.container.flex.trading
+			.trading_info.flex
+				p.block_title.trading_title trading
+					br
+					| power
+				a(href="#").custom_btn.custom_btn_trading about infifiox
+			.trading_items.flex
+				.trading_item.flex
+					.trading_item-title already traded in 2016
+					.trading_item-num  £100,000,000.00 
+				.trading_item.flex
+					.trading_item-title FCA authorised and regulated 
+					.trading_item-num  since 2009
+	article.learn_bg
+		.flex.container
+			.learn
+				p.block_title.learn_title learn 
+					br
+					| to trade
+				p.learn_summary Our ecosystem enables and empowers our clients.
+				p.learn_text Practice accounts, feefree trading accounts low deposits are supported by our products and tools to aid training and education, and enhance clients’ knowledge and trading performance.
+				.learn_btns.flex
+					.learn_btn-left
+						a(href="#").custom_btn.learn_btn Watch guides
+						p.learn_btn-title Forex | Commodities | Indexes
+					.learn_btn-right
+						a(href="#").custom_btn.learn_btn.custom_btn_emptyBg Webinar schedule
+						p.learn_btn-title Join our webinars and learn from experts
+	article.testimon_bg
+		.testimon.flex.container
+			.block_title.testimon_title testimonal
+			.testimon_slick
+				.testimon_item
+					a(href="#").testimon_item-imgLink
+						img(src="images/wonderig.jpg", alt="").testimon_item-img
+					p.testimon_item-title roth eisenberg
+					p.testimon_item-job Designer/Founder
+					a.testimon_item-link(href="#") tatly.com
+				.testimon_item
+					a(href="#").testimon_item-imgLink
+						img(src="images/womanslide.jpg", alt="").testimon_item-img
+					p.testimon_item-title Britany Hemfold 
+					p.testimon_item-job Manager
+					a.testimon_item-link(href="#") borch.me
+				.testimon_item
+					a(href="#").testimon_item-imgLink
+						img(src="images/wonderig.jpg", alt="").testimon_item-img
+					p.testimon_item-title Bob Kirs 
+					p.testimon_item-job Founder —
+					a.testimon_item-link(href="#") seofarm.com
+				.testimon_item
+					a(href="#").testimon_item-imgLink
+						img(src="images/wonderig.jpg", alt="").testimon_item-img
+					p.testimon_item-title roth eisenberg
+					p.testimon_item-job Designer/Founder
+					a.testimon_item-link(href="#") tatly.com
+				.testimon_item
+					a(href="#").testimon_item-imgLink
+						img(src="images/womanslide.jpg", alt="").testimon_item-img
+					p.testimon_item-title Britany Hemfold 
+					p.testimon_item-job Manager
+					a.testimon_item-link(href="#") borch.me
+				.testimon_item
+					a(href="#").testimon_item-imgLink
+						img(src="images/wonderig.jpg", alt="").testimon_item-img
+					p.testimon_item-title Bob Kirs 
+					p.testimon_item-job Founder —
+					a.testimon_item-link(href="#") seofarm.com
+				.testimon_item
+					a(href="#").testimon_item-imgLink
+						img(src="images/wonderig.jpg", alt="").testimon_item-img
+					p.testimon_item-title roth eisenberg
+					p.testimon_item-job Designer/Founder
+					a.testimon_item-link(href="#") tatly.com
+				.testimon_item
+					a(href="#").testimon_item-imgLink
+						img(src="images/womanslide.jpg", alt="").testimon_item-img
+					p.testimon_item-title Britany Hemfold 
+					p.testimon_item-job Manager
+					a.testimon_item-link(href="#") borch.me
+				.testimon_item
+					a(href="#").testimon_item-imgLink
+						img(src="images/wonderig.jpg", alt="").testimon_item-img
+					p.testimon_item-title Bob Kirs 
+					p.testimon_item-job Founder —
+					a.testimon_item-link(href="#") seofarm.com
+
+	article.skills.container.flex
+		.skill_item.skill_setting
+			p.skill_item-title British Framework
+			p.skill_item-text We’re regulated by the UK’s Financial Conduct Authority. All client deposits are held in Barclays Bank and are protected – up to £50,000 – by the FSCS
+		.skill_item.skill_structure
+			p.skill_item-title Fast infrastructure
+			p.skill_item-text All formats use the latest cloud acceleration and content delivery networks to connect data feeds and enable trade processing.
+		.skill_item.skill_premium
+			p.skill_item-title Premium Experience
+			p.skill_item-text First-class technology combine with outstanding customer service to create a premium customer experience.
+		.skill_item.skill.skill_access
+			p.skill_item-title Accessibility
+			p.skill_item-text Practice accounts available for all new customers and we have an ever-expanding, extensive range of tools to aid your training and enhance your skill
+		.skill_item.skill_data
+			p.skill_item-title Competitive Pricing
+			p.skill_item-text We offer PIPs as low as 0.4 and leverage of up to 300:1. No commission trading. Deposits can be as low as £100
+	article.tabs_bg
+		.tabs.flex.container
+			ul.tabs_nav.flex
+				li.tabs_list(data-tab-nav="infinox") infinox
+				li.tabs_list(data-tab-nav="trade") trade
+				li.tabs_list(data-tab-nav="theory") theory
+				li.tabs_list(data-tab-nav="mt4") mt4
+				li.tabs_list(data-tab-nav="expert") mt4 expert
+				li.tabs_list(data-tab-nav="cuboid") cuboid options
+				li.tabs_hover
+			.tabs_content
+				.tabs_item.tabs_item--acrive#infinox
+					p.tabs_title what is forex
+					p.tabs_text Forex as in industry has a reported over $5 trillion a day turnover, with trading in many locations and exchanges 24 hours a day from Sunday night through to Friday night.  Foreign exchange trading enables you to take advantage of rate fluctuations across a wide range of currencies. Forex pricing is based on the price relationship between two currencies, such as GBP/USD. Each such relationship is called a pair. You speculate on whether the price of one country's currency will rise or fall against the currency of another country, and take a position accordingly. 
+					.tabs_btns.flex 
+						a(href="#").custom_btn.tabs_btn DOWNLOAD FREE E-BOOK  
+						a(href="#").custom_btn.tabs_btn.custom_btn_emptyBg GO TO LEARNING CENTER  
+				.tabs_item#trade
+					p.tabs_title trade in forex
+					p.tabs_text Forex as in industry has a reported over $5 trillion a day turnover, with trading in many locations and exchanges 24 hours a day from Sunday night through to Friday night.  Foreign exchange trading enables you to take advantage of rate fluctuations across a wide range of currencies. Forex pricing is based on the price relationship between two currencies, such as GBP/USD. Each such relationship is called a pair. You speculate on whether the price of one country's currency will rise or fall against the currency of another country, and take a position accordingly. 
+					.tabs_btns.flex 
+						a(href="#").custom_btn.tabs_btn DOWNLOAD FREE E-BOOK  
+						a(href="#").custom_btn.tabs_btn.custom_btn_emptyBg GO TO LEARNING CENTER
+				.tabs_item#theory
+					p.tabs_title theory in forex
+					p.tabs_text Forex as in industry has a reported over $5 trillion a day turnover, with trading in many locations and exchanges 24 hours a day from Sunday night through to Friday night.  Foreign exchange trading enables you to take advantage of rate fluctuations across a wide range of currencies. Forex pricing is based on the price relationship between two currencies, such as GBP/USD. Each such relationship is called a pair. You speculate on whether the price of one country's currency will rise or fall against the currency of another country, and take a position accordingly. 
+					.tabs_btns.flex 
+						a(href="#").custom_btn.tabs_btn DOWNLOAD FREE E-BOOK  
+						a(href="#").custom_btn.tabs_btn.custom_btn_emptyBg GO TO LEARNING CENTER
+				.tabs_item#mt4
+					p.tabs_title mt4 in forex
+					p.tabs_text Forex as in industry has a reported over $5 trillion a day turnover, with trading in many locations and exchanges 24 hours a day from Sunday night through to Friday night.  Foreign exchange trading enables you to take advantage of rate fluctuations across a wide range of currencies. Forex pricing is based on the price relationship between two currencies, such as GBP/USD. Each such relationship is called a pair. You speculate on whether the price of one country's currency will rise or fall against the currency of another country, and take a position accordingly. 
+					.tabs_btns.flex 
+						a(href="#").custom_btn.tabs_btn DOWNLOAD FREE E-BOOK  
+						a(href="#").custom_btn.tabs_btn.custom_btn_emptyBg GO TO LEARNING CENTER
+				.tabs_item#expert
+					p.tabs_title expert
+					p.tabs_text Forex as in industry has a reported over $5 trillion a day turnover, with trading in many locations and exchanges 24 hours a day from Sunday night through to Friday night.  Foreign exchange trading enables you to take advantage of rate fluctuations across a wide range of currencies. Forex pricing is based on the price relationship between two currencies, such as GBP/USD. Each such relationship is called a pair. You speculate on whether the price of one country's currency will rise or fall against the currency of another country, and take a position accordingly. 
+					.tabs_btns.flex 
+						a(href="#").custom_btn.tabs_btn DOWNLOAD FREE E-BOOK  
+						a(href="#").custom_btn.tabs_btn.custom_btn_emptyBg GO TO LEARNING CENTER
+				.tabs_item#cuboid
+					p.tabs_title cuboid
+					p.tabs_text Forex as in industry has a reported over $5 trillion a day turnover, with trading in many locations and exchanges 24 hours a day from Sunday night through to Friday night.  Foreign exchange trading enables you to take advantage of rate fluctuations across a wide range of currencies. Forex pricing is based on the price relationship between two currencies, such as GBP/USD. Each such relationship is called a pair. You speculate on whether the price of one country's currency will rise or fall against the currency of another country, and take a position accordingly. 
+					.tabs_btns.flex 
+						a(href="#").custom_btn.tabs_btn DOWNLOAD FREE E-BOOK  
+						a(href="#").custom_btn.tabs_btn.custom_btn_emptyBg GO TO LEARNING CENTER
+
+
+	article.platform.container
+		.block_title.platform_title OUR TRADING PLATFORMS
+		.platform_content.flex
+			.platform_item.platform_web mt for web
+			.platform_item.platform_win mt for windows
+			.platform_item.platform_mac mt for mac
+			.platform_item.platform_ios mt for ios
+			.platform_item.platform_android mt for android
+			.platform_item.platform_cuboid mt for cuboid online
+	article.footer_bg
+		footer.container.flex.footer
+			.footer_item
+				p.footer_item-title legal information
+				ul
+					li.footer_item-list
+						a(href="#").footer_item-link infibox client agreement
+					li.footer_item-list
+						a(href="#").footer_item-link ib agreement
+					li.footer_item-list
+						a(href="#").footer_item-link privacy policy
+					li.footer_item-list
+						a(href="#").footer_item-link sipp application form
+					li.footer_item-list
+						a(href="#").footer_item-link legal information
+					li.footer_item-list
+						a(href="#").footer_item-link fair usage policy
+					li.footer_item-list
+						a(href="#").footer_item-link corporate application
+					li.footer_item-list
+						a(href="#").footer_item-link execution only risk warning
+					li.footer_item-list
+						a(href="#").footer_item-link objective statement
+			.footer_item
+				p.footer_item-title about us
+				p.footer_item-text Spreads From 0.5 pips - Leverage Up To 300:1 - No Requotes Trade Online 24/5 - Forex. Indices. Commodities. Options
+				p.footer_item-text INFINOX CAPITAL Ltd is a company registered in England and Wales under number 06854853. Registered Ofice: Birchin Court 20 Birchin Lane, London, EC3V 9DU, United Kingdom
+				p.footer_item-text INFINOX is a major provider of online foreign exchange (Forex) trading services, ofering margin FX and commodities trading to individuals and institutional clients worldwide.
+			.footer_item.footer_item-connect.flex
+				.footer_item-contact
+					p.footer_item-title Contacts
+					a.footer_item-mail(href="mailto:#") support@infinox.com 
+					a.footer_item-phone(href="tel:#") +44(0)20 3713 4490 
+				.footer_item-accept
+					p.footer_item-title we accept
+					ul.footer_item-pay.flex
+						li.footer_item-pay.footer_item-pay__mc
+						li.footer_item-pay.footer_item-pay__visa
+						li.footer_item-pay.footer_item-pay__skrill
+						li.footer_item-pay.footer_item-pay__bank
+						li.footer_item-pay.footer_item-pay__union
+						li.footer_item-pay.footer_item-pay__neteller
+			.footer_item
+				p.footer_item-title FCA REGULATED  
+				.footer_item-text 
+					p NFINOX CAPITAL Ltd Is authorised and regulated by the 
+					p Financial Conduct Authority under firm reference number 501057.
+			.footer_item.footer_big
+				p.footer_item-title Disclaimer  
+				p.footer_item-text Trading Derivatives and FOREX carries a high level of risk to your capital including losing more than your initial expenditure. The efect of leverage is that both gains and losses are magnified . You should only trade Forex if you can afford to carry these risks. The historical financial performance of any underlying instrument is no guarantee or indicator of future performance. Trading Derivatives and FOREX may not be suitable for all investors, so please ensure that you fully understand the risks involved, and seek independent advice if necessary.
+			.footer_bottom.flex
+				p.footer_bottom-copyright © 2016 INFINOX CAPITAL Ltd
+				.footer_bottom-social
+					ul.footer_bottom-ul.flex
+						li
+							a(href="#").footer_bottom-link.footer_bottom-social__fb
+						li
+							a(href="#").footer_bottom-link.footer_bottom-social__in
+						li
+							a(href="#").footer_bottom-link.footer_bottom-social__tw
+						li
+							a(href="#").footer_bottom-link.footer_bottom-social__gg
